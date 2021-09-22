@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "powerbi-app",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

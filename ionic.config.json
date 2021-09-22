@@ -1,0 +1,7 @@
+{
+  "name": "powerbi-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
