@@ -1,0 +1,39 @@
+<ion-header no-border>
+  <ion-toolbar color="dark">
+
+    <ion-buttons>
+      <ion-button (click)="regresar()">
+        <ion-icon color="warning" slot="icon-only" name="caret-back">
+        </ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content color="dark">
+
+  <div style="text-align: center;">
+    <p>Panel de administración</p>
+  </div>
+
+  <ion-card color="dark" style="text-align: center;" (click)="modificar()">
+    <ion-card-header style="text-align: center;">
+      <img style="width: 60%;" src="../../assets/img/shapes.png" alt="">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-chip color="warning">Modificar</ion-chip>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color="dark" style="text-align: center;" (click)="agregar()">
+    <ion-card-header style="text-align: center;">
+      <img style="width: 50%;" src="../../assets/img/add.png" alt="">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-chip color="warning">Agregar</ion-chip>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

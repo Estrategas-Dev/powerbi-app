@@ -1,0 +1,41 @@
+<ion-content>
+
+  <div class="contenido-login">
+
+    <hr><hr>
+
+    <div class="contenido-formulario">
+
+      <div style="text-align: center;">
+        <h3>Login</h3>
+      </div>
+      
+      <hr><hr>
+
+      <div *ngIf="errorBlancos" class="errorBlancos" >  
+        <p>Usuario y contraseña obligatorios...</p>
+      </div>
+
+      <div *ngIf="errorIncorrectos" class="errorIncorrectos" >
+        <p>El usuario o contraseña son incorrectos</p>
+      </div>
+
+      <div *ngIf="errorNoExiste" class="errorIncorrectos" >
+        <p>El usuario no esta dado de alta</p>
+      </div>
+      
+      <ion-input  name="email" [(ngModel)]="email" type="email" placeholder="Ingrese su email"> </ion-input>
+      <hr>
+      <ion-input  name="email" [(ngModel)]="password" type="password" placeholder="Ingrese su password"> </ion-input>
+      <hr>
+      <ion-button color="warning" shape="round" (click)="login()" expand="full">Entrar</ion-button>
+    </div>
+
+  </div>
+
+
+  <div class="powerbi">
+    <img src="../../assets/img/logo-power.png" alt="">
+  </div>
+
+</ion-content>

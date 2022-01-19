@@ -1,0 +1,36 @@
+<ion-header no-border>
+  <ion-toolbar color="dark">
+
+    <ion-buttons>
+      <ion-button (click)="regresar()">
+        <ion-icon color="warning" slot="icon-only" name="caret-back">
+        </ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content color="dark">
+
+  <div style="text-align: center;">
+    <p>Panel de administrción</p>
+  </div>
+
+  <ion-card>
+    <ion-item color="warning">
+      <ion-icon name="information" slot="start"></ion-icon>
+      <ion-input value="titulo"></ion-input>
+      <!-- <ion-button color="success" fill="outline" slot="end">Cambiar</ion-button> -->
+    </ion-item>
+
+    <ion-card-content>
+        <ion-label position="floating">Descripción del KPI</ion-label>
+        <ion-input color="success" value="descripcion"></ion-input>
+        <ion-label position="floating">Url del KPI</ion-label>
+        <ion-input color="success" value="url"></ion-input>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

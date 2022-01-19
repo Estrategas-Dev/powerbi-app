@@ -1,0 +1,45 @@
+<ion-header no-border>
+  <ion-toolbar color="dark">
+
+    <ion-buttons>
+      <ion-button (click)="regresar()">
+        <ion-icon color="warning" slot="icon-only" name="caret-back">
+        </ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+
+  <div style="text-align: center;">
+    <p>Panel para agregar un kpi</p>
+  </div>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="stacked">Titulo</ion-label>
+        <ion-input [(ngModel)]="titulo"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Descripción</ion-label>
+        <ion-textarea [(ngModel)]="descripcion" rows="6" cols="20"></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Url</ion-label>
+        <ion-input [(ngModel)]="url"></ion-input>
+      </ion-item>
+      <div style="text-align: center; margin-top: 20px;">
+        <ion-button (click)="guardar()" style="width: 80%; margin: 0 auto !important;" color="warning" shape="round">
+          Agregar
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+
+
+
+</ion-content>
